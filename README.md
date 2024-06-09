@@ -1,6 +1,6 @@
 # Trabajo final Delta6 - Laboratorio de programacion - 
 ## Integrantes: 
-- Bustos Matias
+- Busto Matias
 - Iturrart Juan
 - Meza Pablo
 - Roberto Tigrero
