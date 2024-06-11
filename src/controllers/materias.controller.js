@@ -1,27 +1,43 @@
 const db = require('../../models');
-const materias = db.Materias
+const Materias = db.Materias;
 
-
-const getAllmaterias = (req, res) => {
-    res.status(200).json(materias)
-}
-
-const getMateriaById = (req, res) => {
-    const id = req.params.id
-    const materia = materias.find( s=> s.id == id)
-    res.status(200).json(materia)
-}
-
-const createMateria = (req, res) => {
-    const materia = req.body
-    let id = 1
-    if(materias.length) {
-        const ids = materias.map ( s => s.id )
-        id = Math.max(...ids) + 1
+const getAllmaterias = async (req, res) => {
+    try {
+        const materias = await Materias.findAll({});
+        res.status(200).json(materias);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
     }
-    materias.push( {id, ...materia})
-    res.status(201).json(materias[materias.length-1])
 }
 
+const getMateriaById = async (req, res) => {
+    const id = req.params.id;
+    try {
+        const materia = await Materias.findOne({ where: { id: id } });
+        res.status(200).json(materia);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
 
-module.exports = { getAllmaterias, getMateriaById, createMateria, materias  }
+const createMateria = async (req, res) => {
+    try {
+        const nuevaMateria = await Materias.create(req.body);
+        res.status(201).json(nuevaMateria);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+const deleteMateria = async (req, res) => {
+    const id = req.params.id;
+    try {
+        const materia = await Materias.findOne({ where: { id: id } });
+        await materia.destroy();
+        res.status(200).json({ message: 'Materia eliminada con éxito' });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+module.exports = { getAllmaterias, getMateriaById, createMateria, deleteMateria };
