@@ -20,15 +20,6 @@ const getMateriaById = async (req, res) => {
     }
 }
 
-const createMateria = async (req, res) => {
-    try {
-        const nuevaMateria = await Materias.create(req.body);
-        res.status(201).json(nuevaMateria);
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-}
-
 const deleteMateria = async (req, res) => {
     const id = req.params.id;
     try {
@@ -40,4 +31,4 @@ const deleteMateria = async (req, res) => {
     }
 }
 
-module.exports = { getAllmaterias, getMateriaById, createMateria, deleteMateria };
+module.exports = { getAllmaterias, getMateriaById, deleteMateria };
