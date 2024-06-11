@@ -1,5 +1,6 @@
 const db = require('../../models');
 const Carreras = db.Carreras;
+const Materias = db.Materias;
 
 const getAllcarreras = async (req, res) => {
     try {
@@ -33,6 +34,25 @@ const createCarrera = async (req, res) => {
     }
 }
 
+const createMateriaByCarreraId = async (req, res) => {
+    try {
+        const nuevaMateria = await Materias.create(req.body);
+        res.status(201).json(nuevaMateria);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
+const getAllMateriasByCarreraId = async (req, res) => {
+    const id = req.params.id;
+    try {
+        const materias = await Materias.findAll({ where: { carreraId: id } });
+        res.status(200).json(materias);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
 const deleteCarrera = async (req, res) => {
     const id = req.params.id;
     try {
@@ -44,4 +64,4 @@ const deleteCarrera = async (req, res) => {
     }
 }
 
-module.exports = { getAllcarreras, getCarreraById, createCarrera, deleteCarrera }
+module.exports = { getAllcarreras, getCarreraById, createCarrera,createMateriaByCarreraId, getAllMateriasByCarreraId, deleteCarrera }
