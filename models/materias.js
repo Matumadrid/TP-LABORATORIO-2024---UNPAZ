@@ -17,6 +17,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
+    cuatrimestral: {
+      type: DataTypes.TINYINT,
+      allowNull: false
+    },
     anio: {
       type: DataTypes.INTEGER,
       allowNull: false
