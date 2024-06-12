@@ -33,7 +33,7 @@ Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener m
 
 ## Comandos de instalacion y ejecucion de api
 ### 1. Abrir una nueva terminal y ejecutar:
-        npm i express
+npm i express
 ### 2. Ejecutar en la terminal `` *npm i -D nodemon* ``
 ### 3. Ejecutar en la terminal `` *npm i joi* ``
 ### 4. Ejecutar en la terminar `` *npm i sequelize* ``
