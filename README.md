@@ -36,10 +36,27 @@ Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener m
 ```
 npm i express
 ```
-### 2. Ejecutar en la terminal `` *npm i -D nodemon* ``
-### 3. Ejecutar en la terminal `` *npm i joi* ``
-### 4. Ejecutar en la terminar `` *npm i sequelize* ``
-### 5. Ejecutar en la terminal `` *npm i sqlite3* ``
-### 6. Ejecutar en la terminal `` *npm i -D sequelize-cli* ``
-### 7. Ejecutar en la terminal `` *npm run dev* ``
-
+### 2. Ejecutar el siguiente comando en la misma terminal:
+``` 
+*npm i -D nodemon*
+```
+### 3. Ejecutar el siguiente comando en la misma terminal: 
+```
+npm i joi 
+```
+### 4. Ejecutar el siguiente comando en la misma terminal:
+```
+npm i sequelize
+```
+### 5. Ejecutar el siguiente comando en la misma terminal: 
+```
+npm i sqlite3
+```
+### 6. Ejecutar el siguiente comando en la misma terminal: 
+```
+npm i -D sequelize-cli 
+```
+### 7. Ejecutar el siguiente comando en la misma terminal:
+```
+npm run dev
+```
