@@ -1,15 +1,16 @@
 # Trabajo final - Delta6 - Laboratorio de programacion - 
+
 ## Integrantes: 
 - Busto Matias
 - Iturrart Juan
 - Meza Pablo
 - Roberto Tigrero
 
-# API
+## API
 Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener muchas materias y una materia tiene una carrera.
 
-# Ejemplo del JSON de Datos
-## - Carreras: 
+## Ejemplo del JSON de Datos
+### - Carreras: 
 {
         {
         id,
@@ -19,7 +20,7 @@ Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener m
         }
 }
 
-## - Materias:
+### - Materias:
 {
         {
         id,
