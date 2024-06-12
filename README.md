@@ -38,7 +38,7 @@ npm i express
 ```
 ### 2. Ejecutar el siguiente comando en la misma terminal:
 ``` 
-*npm i -D nodemon*
+npm i -D nodemon
 ```
 ### 3. Ejecutar el siguiente comando en la misma terminal: 
 ```
