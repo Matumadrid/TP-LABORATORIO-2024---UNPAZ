@@ -11,11 +11,9 @@ const carreraSchema = Joi.object().keys({
         "string.empty": "nombre no puede ser vacío",
         "any.required": "nombre es requerido"
     }),
-    grado: Joi.string().min(5).max(50).required().messages({
-        "string.min": "grado debe tener como mínimo {#limit} caracteres",
-        "string.max": "grado debe tener como máximo {#limit} caracteres",
-        "string.empty": "grado no puede ser vacío",
-        "any.required": "grado es requerido"
+    grado: Joi.string().required().valid('Licenciatura', 'Tecnicatura').messages({
+        "any.required": "por favor, ingrese un grado para la carrera",
+        "any.only": "los grados válidos son Licenciatura o Tecnicatura"
     }),
     universidad: Joi.string().min(5).max(50).required().messages({
         "string.min": "universidad debe tener como mínimo {#limit} caracteres",
