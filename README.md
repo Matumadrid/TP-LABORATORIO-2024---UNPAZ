@@ -95,5 +95,5 @@ npm i -D sequelize-cli
 ```
 npm run dev
 ```
-#### El servidor estará iniciado en http://127.0.0.1:3000 (puerto por defecto)
-#### Anteiormente se deberá descomentar la línea que se encuentra debajo del console.log en el archivo app.js (esto creará las tablas que utilizará la base de datos) y luego volverla a comentar.
+#### El servidor estará iniciado en http://127.0.0.1:3000 (puerto por defecto).
+#### Anteriormente se deberá descomentar la línea que se encuentra debajo del console.log en el archivo app.js (esto creará las tablas que utilizará la base de datos) y luego volverla a comentar.
