@@ -1,39 +1,40 @@
-# Trabajo final Delta6 - Laboratorio de programacion - 
+# Trabajo final - Delta6 - Laboratorio de programacion - 2024
 ## Integrantes: 
 - Busto Matias
 - Iturrart Juan
 - Meza Pablo
 - Roberto Tigrero
 
-### Estructura
+### API
+Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener muchas materias y una materia tiene una carrera.
 
 ### Ejemplo del JSON de Datos
-#### JSON GENERAL [ ]
 - Carreras: 
+{
+  {
+   id,
+   nombre,
+   grado,
+   universidad, 
+  }
+}
+- Materias:
+{
+  {
+   id,
+   nombre,
+   cuatrimestral,
+   anio,
+   carreraId,
+  }
+}
 
-        {
-    
-        {id, nombre, grado, universidad, 
-        materias
-                [
-                {id, nombre, anio, carreraId},
-                {id, nombre, anio, carreraId}
-                ]
-        },
-
-        {id, nombre, grado, universidad, 
-        materias 
-                [
-                {id, nombre, anio, carreraId},
-                {id, nombre, anio, carreraId}
-                ]
-        }
-        }
-
-#### comandos [ ]
-
-
-1. Ejecutar en la terminal ```npm install```
-2. Ejecutar en la terminal *npm run dev*
-3. 
+### Comandos de instalacion y ejecucion de api
+1. Ejecutar en la terminal `` *npm i express* ``
+2. Ejecutar en la terminal `` *npm i -D nodemon* ``
+3. Ejecutar en la terminal `` *npm i joi* ``
+4. Ejecutar en la terminar `` *npm i sequelize* ``
+5. Ejecutar en la terminal `` *npm i sqlite3* ``
+6. Ejecutar en la terminal `` *npm i -D sequelize-cli* ``
+7. Ejecutar en la terminal `` *npm run dev* ``
 
