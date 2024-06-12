@@ -5,11 +5,11 @@
 - Meza Pablo
 - Roberto Tigrero
 
-### API
+# API
 Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener muchas materias y una materia tiene una carrera.
 
-### Ejemplo del JSON de Datos
-- Carreras: 
+# Ejemplo del JSON de Datos
+## - Carreras: 
 {
         {
         id,
@@ -18,7 +18,8 @@ Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener m
         universidad, 
         }
 }
-- Materias:
+
+## - Materias:
 {
         {
         id,
@@ -29,7 +30,7 @@ Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener m
         }
 }
 
-### Comandos de instalacion y ejecucion de api
+# Comandos de instalacion y ejecucion de api
 1. Ejecutar en la terminal `` *npm i express* ``
 2. Ejecutar en la terminal `` *npm i -D nodemon* ``
 3. Ejecutar en la terminal `` *npm i joi* ``
