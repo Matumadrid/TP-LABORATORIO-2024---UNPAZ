@@ -22,13 +22,13 @@ relacionadas con "materias".
 
  - **src**:
 
-   - **Controllers**:
+   - **controllers**:
      - `carreras.controller.js`: Controlador que maneja las
 operaciones CRUD para "carreras".
      - `materias.controller.js`: Controlador que maneja las
 operaciones CRUD para "materias".
 
-   - **Middlewares**:
+   - **middlewares**:
      - `carreras.middleware.js`: Middleware específico para "carreras" que puede
 manejar validaciones de datos antes de llegar al controlador.
      - `materias.middleware.js`: Middleware específico para "materias" que puede
@@ -36,7 +36,7 @@ manejar validaciones de datos antes de llegar al controlador.
      - `schemaValidator.js`: Middleware que valida los schemas de
 datos de entrada basándose en ciertas reglas.
 
-   - **Routes**:
+   - **routes**:
      - `carreras.route.js`: Define las rutas de la API relacionadas con "carreras" y las
 asocia con los controladores y middlewares correspondientes.
      - `materias.route.js`: Define las rutas de la API relacionadas con "materias" y las
