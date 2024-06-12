@@ -95,4 +95,4 @@ npm i -D sequelize-cli
 ```
 npm run dev
 ```
-#### El servidor estara iniciado en http://127.0.0.1:3000 (puerto por defecto)
+#### El servidor estará iniciado en http://127.0.0.1:3000 (puerto por defecto)
