@@ -35,21 +35,10 @@
 
         {
     
-        {id, nombre, grado, universidad, 
-        materias
-                [
-                {id, nombre, anio, carreraId},
-                {id, nombre, anio, carreraId}
-                ]
+        {npm install
         },
 
-        {id, nombre, grado, universidad, 
-        materias 
-                [
-                {id, nombre, anio, carreraId},
-                {id, nombre, anio, carreraId}
-                ]
-        }
+        {npm run dev
         }
 
 1. Ejecutar en la terminal ```**npm install**```
