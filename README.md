@@ -30,7 +30,7 @@
         }
         }
 
-### Comandos para instalacion y ejecucion de api
+#### comandos []
 1. Ejecutar en la terminal ```**npm install**```
 2. Ejecutar en la terminal *npm run dev*
 3. Probar en las siguientes rutas <img src="https:" alt="Flecha abajo" width="20px" style="position: absolute; top: 1px; padding-left:5px">
