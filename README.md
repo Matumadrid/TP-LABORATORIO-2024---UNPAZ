@@ -31,8 +31,28 @@
         }
 
 #### comandos [ ]
-{
+
+
+        {
+    
+        {id, nombre, grado, universidad, 
+        materias
+                [
+                {id, nombre, anio, carreraId},
+                {id, nombre, anio, carreraId}
+                ]
+        },
+
+        {id, nombre, grado, universidad, 
+        materias 
+                [
+                {id, nombre, anio, carreraId},
+                {id, nombre, anio, carreraId}
+                ]
+        }
+        }
+
 1. Ejecutar en la terminal ```**npm install**```
 2. Ejecutar en la terminal *npm run dev*
-3. }
+3. 
 
