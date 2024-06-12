@@ -11,25 +11,25 @@ Se basa en una estructura del modelo entidad-relacion. Una carrera puede tener m
 
 ## Ejemplo del JSON de Datos
 ### - Carreras: 
-{
         {
-        id,
-        nombre,
-        grado,
-        universidad, 
+                {
+                id,
+                nombre,
+                grado,
+                universidad, 
+                }
         }
-}
 
 ### - Materias:
-{
         {
-        id,
-        nombre,
-        cuatrimestral,
-        anio,
-        carreraId,
+                {
+                id,
+                nombre,
+                cuatrimestral,
+                anio,
+                carreraId,
+                }
         }
-}
 
 # Comandos de instalacion y ejecucion de api
 1. Ejecutar en la terminal `` *npm i express* ``
