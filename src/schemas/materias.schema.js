@@ -1,10 +1,6 @@
 const Joi = require('joi')
 
 const materiaSchema = Joi.object().keys({
-    id: Joi.number().integer().required().messages({
-        "number.base": "id debe ser un número entero",
-        "any.required": "id es requerido"
-    }),
     nombre: Joi.string().min(5).max(50).required().messages({
         "string.min": "nombre debe tener como mínimo {#limit} caracteres",
         "string.max": "nombre debe tener como máximo {#limit} caracteres",
