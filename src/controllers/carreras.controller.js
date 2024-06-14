@@ -4,7 +4,7 @@ const Materias = db.Materias;
 
 const getAllcarreras = async (req, res) => {
     try {
-        const carreras = await Carreras.findAll({});
+        const carreras = await Carreras.findAll({include:'materias'});
         res.status(200).json(carreras);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -14,7 +14,7 @@ const getAllcarreras = async (req, res) => {
 const getCarreraById = async (req, res) => {
     const id = req.params.id;
     try {
-        const carreras = await Carreras.findOne({ where: { id: id } });
+        const carreras = await Carreras.findOne({ where: { id: id }, include:'materias' });
         if (!carreras) {
             res.status(404).json({ error: 'Carrera no encontrada' });
         } else {
