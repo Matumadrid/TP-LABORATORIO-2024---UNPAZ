@@ -4,15 +4,10 @@ const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Carreras extends Model {
     static associate(models) {
-      // define association here
+      Carreras.hasMany(models.Materias, {as: 'materias', foreignKey:'carreraId'})
     }
   }
   Carreras.init({
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      allowNull: false
-    },
     nombre: {
       type: DataTypes.STRING,
       allowNull: false
